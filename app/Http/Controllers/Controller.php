@@ -11,6 +11,10 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+    public function plantilla(){
+        return view("plantilla.matrix-admin-bt5");
+    }
+
     public function index(){
         return view("index");
     }

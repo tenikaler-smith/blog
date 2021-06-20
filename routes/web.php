@@ -13,5 +13,9 @@ use App\Http\Controllers\Controller;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// RUTA: pantilla 
+Route::get('/plantilla', [Controller::class, "plantilla"])->name("plantilla.matrix-admin-bt5");
 
+
+// Ruta: proyecto
 Route::get('/', [Controller::class, "index"])->name("index");

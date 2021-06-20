@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Usuario extends Model
 {
-    use HasFactory;
+  use HasFactory;
+  protected $guarded = [];
+
+  public function roles(){
+    return $this->belongsToMany(Rol::class, 'usuarios_roles', 'usuarios_id', 'roles_id');
+  }
+
 }
