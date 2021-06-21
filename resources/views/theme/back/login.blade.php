@@ -47,20 +47,20 @@
                         <span class="db"><img src="{{asset("assets/back/images/logo.png")}}" alt="logo" /></span>
                     </div>
                     <!-- Form -->
-                    <form class="form-horizontal mt-3" id="loginform" action="index.html">
+                    <form class="form-horizontal mt-3" id="loginform" action="{{route("login")}}">
                         <div class="row pb-4">
                             <div class="col-12">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-success text-white h-100" id="basic-addon1"><i class="ti-user"></i></span>
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required="">
+                                    <input type="Email" class="form-control form-control-lg" placeholder="correo electronico" aria-label="Username" aria-describedby="basic-addon1" required="">
                                 </div>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text bg-warning text-white h-100" id="basic-addon2"><i class="ti-pencil"></i></span>
                                     </div>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required="">
+                                    <input type="Password" class="form-control form-control-lg" placeholder="contraseña" aria-label="Password" aria-describedby="basic-addon1" required="">
                                 </div>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <div class="pt-3">
-                                        <button class="btn btn-info" id="to-recover" type="button"><i class="fa fa-lock me-1"></i> Olvide mi contraseña?</button>
+                                        <button class="btn btn-info" id="to-recover" type="button"><i class="fa fa-lock me-1"></i> olvide mi contraseña?</button>
                                         <button class="btn btn-success float-end text-white" type="submit">Iniciar Session</button>
                                     </div>
                                 </div>
@@ -82,13 +82,13 @@
                     </div>
                     <div class="row mt-3">
                         <!-- Form -->
-                        <form class="col-12" action="index.html">
+                        <form class="col-12" action="#">
                             <!-- email -->
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text bg-danger text-white h-100" id="basic-addon1"><i class="ti-email"></i></span>
                                 </div>
-                                <input type="text" class="form-control form-control-lg" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="email" class="form-control form-control-lg" placeholder="correo electronico" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <!-- pwd -->
                             <div class="row mt-3 pt-3 border-top border-secondary">
