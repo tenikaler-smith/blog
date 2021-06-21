@@ -18,6 +18,7 @@ Route::get('/plantilla', [Controller::class, "plantilla"])->name("matrix-admin-b
 
 
 // Ruta: proyecto
-Route::get('/', [Controller::class, "index"])->name("index");
+Route::get('/inicio', [Controller::class, "index"])->name("index");
 
+Route::get('/', [Controller::class, "login"])->name("theme.back.login");
 Route::get('/app', [Controller::class, "app"])->name("theme.back.app");

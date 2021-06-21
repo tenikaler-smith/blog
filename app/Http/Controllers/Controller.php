@@ -22,4 +22,8 @@ class Controller extends BaseController
     public function app(){
         return view("theme.back.app");
     }
+
+    public function login(){
+        return view("theme.back.login");
+    }
 }
